@@ -1,20 +1,9 @@
 import Ember from 'ember';
 
-var Band = Ember.Object.extend({
-  name: '',
-
-  slug: Ember.computed('name', function() {
-    return this.get('name').dasherize();
-  }),
-
-});
 
 
-var Song = Ember.Object.extend({
-  title: '',
-  rating: 0,
-  band: ''
-});
+import Band from '../models/band';
+import Song from '../models/song';
 
 
 
