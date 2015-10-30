@@ -1,5 +1,12 @@
+
 <div class="col-md-4">
   <div class="list-group">
+    <div class="list-group-item">
+
+      {{input type="text" class="new-band form-control" placeholder="New band" value=name}}
+      <button class="btn btn-primary btn-sm new-band-button" {{action "createBand"}}>Add</button>
+
+    </div>
     {{#each model.sortedContent as |band|}}
     {{#link-to "bands.band.songs" band class="list-group-item band-link"}}
     {{band.name}}

@@ -1,3 +1,5 @@
+import Ember from 'ember';
+
 var Song = Ember.Object.extend({
   title: '',
   rating: 0,
