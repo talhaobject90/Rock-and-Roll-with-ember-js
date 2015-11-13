@@ -36,13 +36,16 @@ display: block;
 }
 .new-band {
 width: 82%;
+display: inline;
 }
 .new-band-button {
 float: right;
-padding: 3px 10px;
+/*padding: 3px 10px;*/
+
 }
 .new-song {
 width: 50%;
+display: inline;
 }
 .new-song-button {
 margin-left: 20px;
