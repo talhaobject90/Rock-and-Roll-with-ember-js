@@ -5,8 +5,15 @@ export default Ember.Controller.extend({
 
   songCreationStarted: false,
 
+
+  canCreateSong: Ember.computed('songCreationStarted',
+  'model.songs.length', function() {
+    return this.get('songCreationStarted') ||
+    this.get('model.songs.length');
+  }),
+
   noSongs: Ember.computed('model.songs.length', function() {
-    return this.get('model.songs.length') != 0;
+    return this.get('model.songs.length') === 0;
   }),
 
   title: '',
