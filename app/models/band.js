@@ -1,6 +1,7 @@
 
 export default Ember.Object.extend({
   name: '',
+  description: '',
 
   setupSongs: Ember.on('init', function() {
     if (!this.get('songs')) {
