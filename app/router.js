@@ -7,7 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('bands', function() {
-    this.route('band', { path: ':slug' }, function() {
+    this.route('band', { path: ':id' }, function() {
       this.route('details');
       this.route('songs');
     });
@@ -15,3 +15,6 @@ Router.map(function() {
 });
 
 export default Router;
+
+
+ // TODO: Test comment
