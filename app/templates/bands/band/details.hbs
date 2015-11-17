@@ -2,20 +2,20 @@
   <div class="panel-body">
     <h4 class="panel-title band-description-header
     pull-left">Description</h4>
-    {{#if isEditing}}
+    {{#liquid-if isEditing class="band-description"}}
     <button class="btn btn-primary pull-right" {{action
       "save"}}>Save</button>
       {{else}}
       <button class="btn btn-primary pull-right" {{action
         "edit"}}>Edit</button>
-        {{/if}}
+        {{/liquid-if}}
         <div class="clearfix"></div>
-        {{#if isEditing}}
+        {{#liquid-if isEditing class="band-description"}}
         <div class="form-group">
           {{textarea class="form-control" value=model.description}}
         </div>
         {{else}}
         <p>{{model.description}}</p>
-        {{/if}}
+        {{/liquid-if}}
       </div>
     </div>
