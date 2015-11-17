@@ -32,7 +32,7 @@ export default Ember.Component.extend({
       this.get('on-click')({
         item: this.get('item'),
         rating: newRating
-      })
+      });
 
     }
   }
