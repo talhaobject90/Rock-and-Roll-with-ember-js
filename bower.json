@@ -14,4 +14,8 @@
     "qunit": "~1.18.0",
     "bootstrap": "~3.3.5"
   }
+  ,
+  "resolutions": {
+  "ember": "2.0.2"
+}
 }
