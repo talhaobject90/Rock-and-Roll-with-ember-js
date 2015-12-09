@@ -42,6 +42,7 @@ module.exports = function(environment) {
 
   if (environment === 'test') {
     // Testem prefers this...
+    ENV.apiHost = '';
     ENV.baseURL = '/';
     ENV.locationType = 'none';
 
